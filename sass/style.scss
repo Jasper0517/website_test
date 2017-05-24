@@ -27,17 +27,12 @@ a{
     background-color: #F6F6F6;
     width: 100%;
     height: 30px;
-	float:left;
 	ul{
 		float: right;
 		li{
-			margin: 6px;
+			margin: 8px;
 			float:left;
 			font-family: Microsoft JhengHei;	
-			a{
-				text-decoration: none;
-				font-size: 16px;
-			}	
 			img{
 				margin-right: 5px;
 				float: left;
@@ -48,7 +43,7 @@ a{
 		a{
 			color:#4460a0;
 			border-right: 2px solid #cccccc;
-			padding-right: 8px;
+			padding-right: 15px;
 		}
 	}
 
@@ -60,28 +55,17 @@ a{
 			color: #49A9E6;
 		}
 	}
-	a:hover{
+		a:hover{
 			color:red;
-	}
-	.clearfix{
-		clear:both;
-	} 
+		}
+
+	// .clearfix{
+	// 	clear:both;
+	// } 
 }
 
 
 
-
-
-
-
-@media(max-width:767px){
-	.menu ul li{
-		float:left;
-		/*margin-left: 20px;*/
-		margin-right: 38px;
-		margin-bottom: 40px;
-	}
-}
 
 .brand{
 	max-width: 100%;
@@ -89,10 +73,12 @@ a{
 	position: relative;
 	margin-top: 0 auto;
 	.logo{
+		float: left;
 		img{
 			padding: 10px 0 5px 20px;
 		}		
 		p{
+			position: fixed;
 			text-indent: -9999px;
 			white-space: nowrap;
 			overflow: hidden;
@@ -100,8 +86,10 @@ a{
 	}
 
 	.menu{
+		position: absolute;
 		max-width: 100%;
-		float:right;
+		right: 0;
+		float: right;
 		padding-top: 19px;
 		ul li{
 			float:left;
@@ -109,7 +97,6 @@ a{
 			margin-right: 20px;
 		}
 		li a{
-			display: inline-block;
 			width: 130%;
 			text-align: center;
 			font-size: 14px;
@@ -121,22 +108,23 @@ a{
 		}
 	}
 	.brandimg{
-		margin: 0 auto;
+		padding-top: 3px;
 		width: 100%;
 	}
 
 	.brandtext{
 		background: RGBA(0, 0, 0, 0.1);
 		width: 100%;
-		max-height: 45%;
+		height: 45%;
 		position: absolute;
+		bottom: 20%;
 		color: white;
-		margin-top:8%;
+		margin-top:13%;
 		font-size: 35px;
-		padding-top: 35px;
+		padding-top: 3%;
 		h1{
-			padding-left: 20px;
-			line-height: 50px;
+			padding-left: 2%;
+			line-height: 140%;
 			font-family: Microsoft JhengHei;	
 		}
 	}
@@ -145,6 +133,12 @@ a{
 
 
 @media(max-width:767px){
+	.menu ul li{
+		float:left;
+		/*margin-left: 20px;*/
+		margin-right: 38px;
+		margin-bottom: 40px;
+	}
 	.brandtext{
 		height: 60px;
 		font-size: 22px;
@@ -155,30 +149,57 @@ a{
 		}
 	}
 }
+@media(max-width: 520px){
+	.brand{
+		text-align: center;
+		.brandtext{
+			font-size: 20px;
+		}
+		.logo img{
+			display: none;
+		}
+		.menu{
+			position: relative;
+			float: none;
+			// height: 38px;
+				text-align: center;					
+			
+			ul{				
+				display: inline;				
+				li{
+					margin-left: 0;
+					margin-right: 40px;
+					margin-bottom: 18px;					
+				}	
+			}
+		}
+	}
+}
 
 .features{
 	width: 100%;
 	height: 400px;
-	// margin: 0 auto;
-	padding-left: 5%;	
-	padding-right: 5%;	
+	// padding-left: 5%;	
+	// padding-right: 5%;	
 	margin-bottom: 5%;
-	margin-top: 5%;	
+	margin-top: 7%;	
+	text-align: center;	
+	padding-left: 3%;
 	span{
-		// display: inline-block;
 		float: left;
 		width: 30.3333%;
-		height: 400px;
+		height: 90%;
 		border: 1px solid RGBA(241, 241, 241, 1.00);
 		text-align: center;
 		margin-right: 3%;
-		padding-top: 20px;
+		// margin-left: 2%;		
+		// padding-top: 20px;
 		box-shadow: 0 4px 2px RGBA(221, 221, 221, 1.00);
 		position: relative;
 	}
 	p{
 		position: absolute;
-		top: 61%;
+		top: 55%;
 		left: 7%;
 		right: 3%;
 		text-align: left;
@@ -189,7 +210,7 @@ a{
 	}
 	ul{
 		position: absolute;
-		top: 66%;
+		top: 61%;
 		left: 17%;
 		text-align: left;
 		list-style: disc;
@@ -199,7 +220,7 @@ a{
 	}
 	h2{
 		position: absolute;
-		top:53%;
+		top:45%;
 		left:22%;
 		right:22%;
 		/*padding-top: 50px;*/
@@ -213,18 +234,32 @@ a{
 	}
 }
 
-@media(max-width:767px){
+@media(max-width: 829px){
 	.features{
-		margin: 100px 0 0 0;
+		padding-left: 1%;	
 		span{
-			width: 100%;
+			margin-right: 1%;
+			width: 32.3333%;
+		}
+	}
+}
+
+@media(max-width: 767px){
+	.features{
+		display: block;
+		padding-left: 20%;
+		padding-right: 10%;
+		padding-top: 10%;	
+		span{
+			width: 80%;
+			margin-bottom: 10%;			
 		}
 		h2{
 			position: absolute;
 			top:53%;
 			left:22%;
 			right:22%;
-			/*padding-top: 50px;*/
+			/*padding-top: 50px;*/			
 			text-align: center;
 			font-size: 18px;
 			font-weight: bold;
@@ -254,15 +289,30 @@ a{
 	}
 }
 
+@media(max-width: 480px){
+	.features{
+		span{
+			height: 310px;
+			h2{
+				top: 44%;	
+			}
+			p{
+				top: 52%;	
+			}
+			ul{
+				top: 62%;
+			}
+		}
+	}
+}
+
 .table{
 	max-width: 100%;
-	margin: 0 auto;
 	h1{
+		clear: both;
 		font-size: 35px;
 		text-align: center;
 		font-family: Microsoft JhengHei;
-		// float: left;	
-		// margin: 0 auto;
 	}
 	table{
 		margin: 30px auto;
@@ -280,6 +330,9 @@ a{
 				padding-left: 25px;
 				line-height: 50px;
 				font-family: Microsoft JhengHei;	
+			
+		}
+		tr{
 			.green{
 				color: RGBA(73, 163, 128, 1.00)
 			}
@@ -312,7 +365,7 @@ a{
     background: -moz-linear-gradient(RGBA(42, 100, 78, 1.00), RGBA(66, 148, 116, 1.00), RGBA(66, 148, 116, 1.00));
     background: -o-linear-gradient(RGBA(42, 100, 78, 1.00), RGBA(66, 148, 116, 1.00), RGBA(66, 148, 116, 1.00));
     background: linear-gradient(RGBA(42, 100, 78, 1.00), RGBA(66, 148, 116, 1.00), RGBA(66, 148, 116, 1.00));
-	margin: 50px 0;
+	margin: 70px 0;
 	position: relative;
 	.contacth{
 		padding-top: 40px;
@@ -340,7 +393,7 @@ a{
 				border-radius: 5px;
 			}
 			.submit{
-				float:left;
+				float: right;
 				width: 70px;	
 				height: 30px;
 				border-radius: 5px;
@@ -398,9 +451,10 @@ a{
 }
 .footer{
 	max-width: 100%;
+	height: 50px;
 	margin-bottom: 30px;
-	float: left;
 	img{
+		float: left;
 		margin-left: 30px;
 	}
 	p{

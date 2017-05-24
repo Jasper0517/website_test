@@ -87,163 +87,188 @@ a {
   background-color: #F6F6F6;
   width: 100%;
   height: 30px;
-  float: left;
 }
-/* line 31, ../sass/style.scss */
+/* line 30, ../sass/style.scss */
 .topbar ul {
   float: right;
 }
-/* line 33, ../sass/style.scss */
+/* line 32, ../sass/style.scss */
 .topbar ul li {
-  margin: 6px;
+  margin: 8px;
   float: left;
   font-family: Microsoft JhengHei;
 }
-/* line 37, ../sass/style.scss */
-.topbar ul li a {
-  text-decoration: none;
-  font-size: 16px;
-}
-/* line 41, ../sass/style.scss */
+/* line 36, ../sass/style.scss */
 .topbar ul li img {
   margin-right: 5px;
   float: left;
 }
-/* line 48, ../sass/style.scss */
+/* line 43, ../sass/style.scss */
 .topbar .facebook a {
   color: #4460a0;
   border-right: 2px solid #cccccc;
-  padding-right: 8px;
+  padding-right: 15px;
 }
-/* line 56, ../sass/style.scss */
+/* line 51, ../sass/style.scss */
 .topbar .twitter img {
   margin-top: 2px;
 }
-/* line 59, ../sass/style.scss */
+/* line 54, ../sass/style.scss */
 .topbar .twitter a {
   color: #49A9E6;
 }
-/* line 63, ../sass/style.scss */
+/* line 58, ../sass/style.scss */
 .topbar a:hover {
   color: red;
 }
-/* line 66, ../sass/style.scss */
-.topbar .clearfix {
-  clear: both;
-}
 
-@media (max-width: 767px) {
-  /* line 78, ../sass/style.scss */
-  .menu ul li {
-    float: left;
-    /*margin-left: 20px;*/
-    margin-right: 38px;
-    margin-bottom: 40px;
-  }
-}
-/* line 86, ../sass/style.scss */
+/* line 70, ../sass/style.scss */
 .brand {
   max-width: 100%;
   max-height: 100%;
   position: relative;
   margin-top: 0 auto;
 }
-/* line 92, ../sass/style.scss */
+/* line 75, ../sass/style.scss */
+.brand .logo {
+  float: left;
+}
+/* line 77, ../sass/style.scss */
 .brand .logo img {
   padding: 10px 0 5px 20px;
 }
-/* line 95, ../sass/style.scss */
+/* line 80, ../sass/style.scss */
 .brand .logo p {
+  position: fixed;
   text-indent: -9999px;
   white-space: nowrap;
   overflow: hidden;
 }
-/* line 102, ../sass/style.scss */
+/* line 88, ../sass/style.scss */
 .brand .menu {
+  position: absolute;
   max-width: 100%;
+  right: 0;
   float: right;
   padding-top: 19px;
 }
-/* line 106, ../sass/style.scss */
+/* line 94, ../sass/style.scss */
 .brand .menu ul li {
   float: left;
   margin-left: 40px;
   margin-right: 20px;
 }
-/* line 111, ../sass/style.scss */
+/* line 99, ../sass/style.scss */
 .brand .menu li a {
-  display: inline-block;
   width: 130%;
   text-align: center;
   font-size: 14px;
   color: #5CC89C;
 }
-/* line 118, ../sass/style.scss */
+/* line 105, ../sass/style.scss */
 .brand .menu li a:hover {
   border-bottom: 3px solid #5CC89C;
   padding-bottom: 15px;
 }
-/* line 123, ../sass/style.scss */
+/* line 110, ../sass/style.scss */
 .brand .brandimg {
-  margin: 0 auto;
+  padding-top: 3px;
   width: 100%;
 }
-/* line 128, ../sass/style.scss */
+/* line 115, ../sass/style.scss */
 .brand .brandtext {
   background: RGBA(0, 0, 0, 0.1);
   width: 100%;
-  max-height: 45%;
+  height: 45%;
   position: absolute;
+  bottom: 20%;
   color: white;
-  margin-top: 8%;
+  margin-top: 13%;
   font-size: 35px;
-  padding-top: 35px;
+  padding-top: 3%;
 }
-/* line 137, ../sass/style.scss */
+/* line 125, ../sass/style.scss */
 .brand .brandtext h1 {
-  padding-left: 20px;
-  line-height: 50px;
+  padding-left: 2%;
+  line-height: 140%;
   font-family: Microsoft JhengHei;
 }
 
 @media (max-width: 767px) {
-  /* line 148, ../sass/style.scss */
+  /* line 136, ../sass/style.scss */
+  .menu ul li {
+    float: left;
+    /*margin-left: 20px;*/
+    margin-right: 38px;
+    margin-bottom: 40px;
+  }
+
+  /* line 142, ../sass/style.scss */
   .brandtext {
     height: 60px;
     font-size: 22px;
     margin-top: 32%;
     padding-top: 0;
   }
-  /* line 153, ../sass/style.scss */
+  /* line 147, ../sass/style.scss */
   .brandtext h1 {
     line-height: 28px;
   }
 }
-/* line 159, ../sass/style.scss */
+@media (max-width: 520px) {
+  /* line 153, ../sass/style.scss */
+  .brand {
+    text-align: center;
+  }
+  /* line 155, ../sass/style.scss */
+  .brand .brandtext {
+    font-size: 20px;
+  }
+  /* line 158, ../sass/style.scss */
+  .brand .logo img {
+    display: none;
+  }
+  /* line 161, ../sass/style.scss */
+  .brand .menu {
+    position: relative;
+    float: none;
+    text-align: center;
+  }
+  /* line 167, ../sass/style.scss */
+  .brand .menu ul {
+    display: inline;
+  }
+  /* line 169, ../sass/style.scss */
+  .brand .menu ul li {
+    margin-left: 0;
+    margin-right: 40px;
+    margin-bottom: 18px;
+  }
+}
+/* line 179, ../sass/style.scss */
 .features {
   width: 100%;
   height: 400px;
-  padding-left: 5%;
-  padding-right: 5%;
   margin-bottom: 5%;
-  margin-top: 5%;
+  margin-top: 7%;
+  text-align: center;
+  padding-left: 3%;
 }
-/* line 167, ../sass/style.scss */
+/* line 188, ../sass/style.scss */
 .features span {
   float: left;
   width: 30.3333%;
-  height: 400px;
+  height: 90%;
   border: 1px solid RGBA(241, 241, 241, 1);
   text-align: center;
   margin-right: 3%;
-  padding-top: 20px;
   box-shadow: 0 4px 2px RGBA(221, 221, 221, 1);
   position: relative;
 }
-/* line 179, ../sass/style.scss */
+/* line 200, ../sass/style.scss */
 .features p {
   position: absolute;
-  top: 61%;
+  top: 55%;
   left: 7%;
   right: 3%;
   text-align: left;
@@ -252,10 +277,10 @@ a {
   line-height: 20px;
   font-family: Microsoft JhengHei;
 }
-/* line 190, ../sass/style.scss */
+/* line 211, ../sass/style.scss */
 .features ul {
   position: absolute;
-  top: 66%;
+  top: 61%;
   left: 17%;
   text-align: left;
   list-style: disc;
@@ -263,10 +288,10 @@ a {
   font-size: 14px;
   font-family: Microsoft JhengHei;
 }
-/* line 200, ../sass/style.scss */
+/* line 221, ../sass/style.scss */
 .features h2 {
   position: absolute;
-  top: 53%;
+  top: 45%;
   left: 22%;
   right: 22%;
   /*padding-top: 50px;*/
@@ -275,21 +300,36 @@ a {
   font-weight: bold;
   font-family: Microsoft JhengHei;
 }
-/* line 211, ../sass/style.scss */
+/* line 232, ../sass/style.scss */
 .features .features2 img {
   padding-top: 20px;
 }
 
-@media (max-width: 767px) {
-  /* line 217, ../sass/style.scss */
+@media (max-width: 829px) {
+  /* line 238, ../sass/style.scss */
   .features {
-    margin: 100px 0 0 0;
+    padding-left: 1%;
   }
-  /* line 219, ../sass/style.scss */
+  /* line 240, ../sass/style.scss */
   .features span {
-    width: 100%;
+    margin-right: 1%;
+    width: 32.3333%;
   }
-  /* line 222, ../sass/style.scss */
+}
+@media (max-width: 767px) {
+  /* line 248, ../sass/style.scss */
+  .features {
+    display: block;
+    padding-left: 20%;
+    padding-right: 10%;
+    padding-top: 10%;
+  }
+  /* line 253, ../sass/style.scss */
+  .features span {
+    width: 80%;
+    margin-bottom: 10%;
+  }
+  /* line 257, ../sass/style.scss */
   .features h2 {
     position: absolute;
     top: 53%;
@@ -301,7 +341,7 @@ a {
     font-weight: bold;
     font-family: Microsoft JhengHei;
   }
-  /* line 233, ../sass/style.scss */
+  /* line 268, ../sass/style.scss */
   .features p {
     position: absolute;
     top: 61%;
@@ -313,7 +353,7 @@ a {
     line-height: 20px;
     font-family: Microsoft JhengHei;
   }
-  /* line 244, ../sass/style.scss */
+  /* line 279, ../sass/style.scss */
   .features ul {
     position: absolute;
     top: 66%;
@@ -325,23 +365,41 @@ a {
     font-family: Microsoft JhengHei;
   }
 }
-/* line 257, ../sass/style.scss */
+@media (max-width: 480px) {
+  /* line 294, ../sass/style.scss */
+  .features span {
+    height: 310px;
+  }
+  /* line 296, ../sass/style.scss */
+  .features span h2 {
+    top: 44%;
+  }
+  /* line 299, ../sass/style.scss */
+  .features span p {
+    top: 52%;
+  }
+  /* line 302, ../sass/style.scss */
+  .features span ul {
+    top: 62%;
+  }
+}
+/* line 309, ../sass/style.scss */
 .table {
   max-width: 100%;
-  margin: 0 auto;
 }
-/* line 260, ../sass/style.scss */
+/* line 311, ../sass/style.scss */
 .table h1 {
+  clear: both;
   font-size: 35px;
   text-align: center;
   font-family: Microsoft JhengHei;
 }
-/* line 267, ../sass/style.scss */
+/* line 317, ../sass/style.scss */
 .table table {
   margin: 30px auto;
   width: 90%;
 }
-/* line 270, ../sass/style.scss */
+/* line 320, ../sass/style.scss */
 .table table th {
   line-height: 50px;
   border-top: solid 1px RGBA(221, 221, 221, 1);
@@ -350,37 +408,37 @@ a {
   padding-left: 25px;
   font-family: Microsoft JhengHei;
 }
-/* line 278, ../sass/style.scss */
+/* line 328, ../sass/style.scss */
 .table table td {
   border-bottom: solid 1px RGBA(221, 221, 221, 1);
   padding-left: 25px;
   line-height: 50px;
   font-family: Microsoft JhengHei;
 }
-/* line 283, ../sass/style.scss */
-.table table td .green {
+/* line 336, ../sass/style.scss */
+.table table tr .green {
   color: RGBA(73, 163, 128, 1);
 }
 
 @media (max-width: 767px) {
-  /* line 291, ../sass/style.scss */
+  /* line 344, ../sass/style.scss */
   .table h1 {
     font-size: 22px;
   }
-  /* line 294, ../sass/style.scss */
+  /* line 347, ../sass/style.scss */
   .table table th {
     line-height: 30px;
     font-size: 12px;
     padding-left: 5;
   }
-  /* line 299, ../sass/style.scss */
+  /* line 352, ../sass/style.scss */
   .table table td {
     line-height: 30px;
     font-size: 10px;
     padding-left: 5;
   }
 }
-/* line 308, ../sass/style.scss */
+/* line 361, ../sass/style.scss */
 .contact {
   max-width: 100%;
   height: 400px;
@@ -388,10 +446,10 @@ a {
   background: -moz-linear-gradient(RGBA(42, 100, 78, 1), RGBA(66, 148, 116, 1), RGBA(66, 148, 116, 1));
   background: -o-linear-gradient(RGBA(42, 100, 78, 1), RGBA(66, 148, 116, 1), RGBA(66, 148, 116, 1));
   background: linear-gradient(RGBA(42, 100, 78, 1), RGBA(66, 148, 116, 1), RGBA(66, 148, 116, 1));
-  margin: 50px 0;
+  margin: 70px 0;
   position: relative;
 }
-/* line 317, ../sass/style.scss */
+/* line 370, ../sass/style.scss */
 .contact .contacth {
   padding-top: 40px;
   color: white;
@@ -399,30 +457,30 @@ a {
   line-height: 30px;
   text-align: center;
 }
-/* line 325, ../sass/style.scss */
+/* line 378, ../sass/style.scss */
 .contact .contactd form .large {
   margin: 25px 0 0 20px;
   width: 45%;
   height: 250px;
   border-radius: 5px;
 }
-/* line 331, ../sass/style.scss */
+/* line 384, ../sass/style.scss */
 .contact .contactd .right {
   position: absolute;
   margin-left: 52%;
   top: 35%;
   width: 43%;
 }
-/* line 336, ../sass/style.scss */
+/* line 389, ../sass/style.scss */
 .contact .contactd .right input {
   margin-top: 10px;
   margin-bottom: 10px;
   width: 100%;
   border-radius: 5px;
 }
-/* line 342, ../sass/style.scss */
+/* line 395, ../sass/style.scss */
 .contact .contactd .right .submit {
-  float: left;
+  float: right;
   width: 70px;
   height: 30px;
   border-radius: 5px;
@@ -431,45 +489,45 @@ a {
   cursor: pointer;
   border: 0 none;
 }
-/* line 352, ../sass/style.scss */
+/* line 405, ../sass/style.scss */
 .contact .contactd .right .submit:horver {
   background: red;
 }
-/* line 356, ../sass/style.scss */
+/* line 409, ../sass/style.scss */
 .contact .contactd p {
   color: white;
 }
 
 @media (max-width: 767px) {
-  /* line 362, ../sass/style.scss */
+  /* line 415, ../sass/style.scss */
   .contact {
     height: 600px;
   }
-  /* line 364, ../sass/style.scss */
+  /* line 417, ../sass/style.scss */
   .contact .contactd {
     width: 100%;
   }
-  /* line 366, ../sass/style.scss */
+  /* line 419, ../sass/style.scss */
   .contact .contactd form .large {
     width: 90%;
   }
-  /* line 370, ../sass/style.scss */
+  /* line 423, ../sass/style.scss */
   .contact .contactd .right {
     width: 90%;
     position: relative;
     margin-top: 10px;
     margin-left: 20px;
   }
-  /* line 378, ../sass/style.scss */
+  /* line 431, ../sass/style.scss */
   .contact .right p {
     margin-left: 42%;
   }
-  /* line 381, ../sass/style.scss */
+  /* line 434, ../sass/style.scss */
   .contact .right input[type="text"] {
     margin-left: 21%;
     width: 50%;
   }
-  /* line 385, ../sass/style.scss */
+  /* line 438, ../sass/style.scss */
   .contact .right input[type="submit"] {
     width: 100px;
     margin: 0;
@@ -478,41 +536,42 @@ a {
   }
 }
 @media (max-width: 480px) {
-  /* line 395, ../sass/style.scss */
+  /* line 448, ../sass/style.scss */
   .contact .right .submit {
     margin-left: 33%;
   }
 }
-/* line 399, ../sass/style.scss */
+/* line 452, ../sass/style.scss */
 .footer {
   max-width: 100%;
+  height: 50px;
   margin-bottom: 30px;
-  float: left;
 }
-/* line 403, ../sass/style.scss */
+/* line 456, ../sass/style.scss */
 .footer img {
+  float: left;
   margin-left: 30px;
 }
-/* line 406, ../sass/style.scss */
+/* line 460, ../sass/style.scss */
 .footer p {
   float: left;
   line-height: 25px;
 }
-/* line 410, ../sass/style.scss */
+/* line 464, ../sass/style.scss */
 .footer .message {
   float: right;
 }
-/* line 412, ../sass/style.scss */
+/* line 466, ../sass/style.scss */
 .footer .message .pink {
   color: RGBA(208, 66, 127, 1);
 }
 
 @media (max-width: 480px) {
-  /* line 419, ../sass/style.scss */
+  /* line 473, ../sass/style.scss */
   .footer {
     margin-left: 60px;
   }
-  /* line 421, ../sass/style.scss */
+  /* line 475, ../sass/style.scss */
   .footer .message {
     margin-top: 20px;
     float: left;
