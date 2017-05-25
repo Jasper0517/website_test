@@ -16,13 +16,6 @@ a{
     margin: 0 auto;
 }
 
-@media(max-width:"480px"){
-
-}
-
-@media(max-width:767px){
-
-}
 .topbar{
     background-color: #F6F6F6;
     width: 100%;
@@ -58,13 +51,7 @@ a{
 		a:hover{
 			color:red;
 		}
-
-	// .clearfix{
-	// 	clear:both;
-	// } 
 }
-
-
 
 
 .brand{
@@ -104,7 +91,7 @@ a{
 		}
 		li a:hover{
 			border-bottom: 3px solid #5CC89C;
-			padding-bottom: 15px;
+			padding-bottom: 19px;
 		}
 	}
 	.brandimg{
@@ -133,12 +120,6 @@ a{
 
 
 @media(max-width:767px){
-	.menu ul li{
-		float:left;
-		/*margin-left: 20px;*/
-		margin-right: 38px;
-		margin-bottom: 40px;
-	}
 	.brandtext{
 		height: 60px;
 		font-size: 22px;
@@ -162,17 +143,20 @@ a{
 			display: none;
 		}
 		.menu{
-			display: inline-block;
-			text-align: center;									
+			display: block;
 			position: relative;
 			float: none;	
-			padding-left: 10%;			
 			ul{
 				li{
-					margin-right: 10px;
-					margin-left: 0;					
+					margin-right: 5px;
+					margin-left: 0;			
+					margin-bottom: 5px;		
 				}
-			}
+				li a:hover{
+					border-bottom: 1px solid #5CC89C;
+					padding-bottom: 1px;
+				}
+			}													
 		}
 	}
 }
@@ -385,7 +369,13 @@ a{
 			height: 250px;
 			border-radius: 5px;
 		}
-		.right{
+
+		p{
+			color: white;
+		}
+	}	
+	
+	.right{
 			position: absolute;
 			margin-left: 52%;
 			top: 35%;
@@ -396,7 +386,7 @@ a{
 				width: 100%;
 				border-radius: 5px;
 			}
-			.submit{
+			input[type="submit"]{
 				float: right;
 				width: 70px;	
 				height: 30px;
@@ -406,53 +396,63 @@ a{
 				cursor:pointer;
 				border:0 none;
 			}
-			.submit:horver{
+			input[type="submit"]:horver{
 				background: red;
 			}
 		}
-		p{
-			color: white;
-		}
-	}	
 }
 @media(max-width:767px){
 	.contact{
+		.contacth h3{
+			margin-bottom: 5px;
+		}
 		height: 600px;
 		.contactd{
 			width: 100%;
 			form .large{
-				// display: block;
+				display: block;
+				margin: 0 auto;
 				width: 90%;
 			}	
-			.right{
-				width: 90%;
-				position: relative;
-				margin-top: 10px;
-				margin-left: 20px;
-			}
 		}
 		.right{
+				width: 100%;
+				position: relative;
+				margin-left: 0;
+				margin-top: 20px;
 			p{
-				margin-left: 42%;				
+				text-align: center;				
 			}
 			 input[type="text"]{
-				margin-left: 21%;		
+				display: block;
+				margin: 10px auto;		
 				width: 50%;
 			}
 			input[type="submit"]{
+				display: block;
 				width: 100px;
-				margin: 0;
-				float: left;
-				margin-left: 35%;
+				margin: 10px auto;
+				float: none;
 			}
 		}
 	}
 }
+
 @media(max-width: 480px){
-	.contact .right .submit{
-		margin-left: 33%;
+	.contact .right input[type="submit"]{
+		margin: 0 auto;
+		float: none;
+	}
+	.contact .right input[type="text"]{
+		display: block;
+		margin: 10px auto;		
+	}
+	.contact .right p{
+		text-align: center;
+		margin-left: 0;
 	}
 }
+
 .footer{
 	max-width: 100%;
 	height: 50px;
