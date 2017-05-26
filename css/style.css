@@ -610,27 +610,3 @@ a {
     text-align: center;
   }
 }
-/*@media(max-width:999px){
-	.wrap{
-    	width: 768px;
-	}
-	.features{
-		height: 360px;
-	}
-
-	.features h2{
-		font-size: 16px;
-		top: 45%;
-	}
-
-	.features p{
-		top: 55%;
-		right: 3px;
-		left: 3px;
-	}
-
-	.features ul{
-		top: 62%;
-	}
-
-}*/
